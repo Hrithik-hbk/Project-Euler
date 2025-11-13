@@ -1,0 +1,26 @@
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+
+
+2520 = 1 * 2 * 3 * 4 * 5 * 6 * 7 * 8 * 9 * 10.
+
+11 = 11 * 1
+12 = 2 * 6
+13 = 13 * 1
+14 = 2 * 7
+15 = 3 * 5
+16 = 2 * 8
+17 = 1 * 17
+18 = 2 * 9
+19 = 1 * 19
+20 = 2 * 10
+
+To find the smallest number that is evenly divisible by numbers from 1 to 20, we multiply 2520 (the smallest number evenly divisible by numbers from 1 to 10)
+with the prime numbers between 11 and 20 and 2. We include 2 because when we multiply numbers from 1 to 10, the highest multiple of 2 that is evenly divisible by the result is 8.
+But we have to find a number that is evenly divisible by 11 to 20 also. So the number must also be divisible by 16. That's why we include a 2, so that the result is evenly divisible by 16.
+
+So the smallest positive number that is evenly divisible by all numbers from 1 to 20 is
+
+2520 * 2 * 11 * 13 * 17 * 19 = 232792560
+
+So, the answer to the above question is 232792560.
