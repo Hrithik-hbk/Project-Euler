@@ -1,0 +1,43 @@
+The prime factors of 13195 are 5, 7, 13, and 29.
+
+What is the largest prime factor of the number 600851475143?
+
+
+This is the logic behind the problem
+
+n = "any number"
+i = 2
+while i*i <= n
+    if (n mod i == 0)
+        n = n/i
+    else
+        i = i +1
+print n
+
+we start with i = 2 because it is the smallest prime number. We divide n by i(here we initially took i = 2) until it is not divisible by i.
+Then we increment i and repeat this process until i * i becomes greater than n. We stop here as any number when divided by a number greater than its root, 
+the result is a number less than the root of the original number.
+
+For example take 100, the factorisations of 100:
+1 x 100
+2 x 50
+4 x 25
+5 x 20
+10 x 10
+20 x 5
+25 x 4
+50 x 2
+100 x 1
+
+Basically, if a number has a factor larger than root n, the matching factor smaller than root n will be found first. 
+
+This is the python solution I got to the above problem 
+
+n = 600851475143
+i = 2
+while i * i <= n:
+    if n % i == 0:
+        n //= i
+    else:
+        i += 1
+print(n)
